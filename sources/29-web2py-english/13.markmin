@@ -1526,7 +1526,7 @@ Assuming we have Redis installed and running on localhost at port 6379, we can c
 ``
 from gluon.contrib.redis_utils import RConn
 from gluon.contrib.redis_cache import RedisCache
-rconn = RConn('localhost', 6379)
+rconn = RConn(host='localhost', port=6379)
 cache.redis = RedisCache(redis_conn=rconn, debug=True)
 ``
 
